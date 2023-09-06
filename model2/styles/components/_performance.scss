@@ -1,0 +1,224 @@
+#performance {
+  padding: 100px 0;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 30px 0;
+  }
+
+  .title-box {
+    h3 {
+      @media (max-width: 375px) {
+        font-size: 23px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .performance-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+
+    @media (max-width: 991px) {
+      gap: 20px;
+    }
+
+    &__item {
+      width: calc(33.3333333333% - 20px);
+      border-radius: 10px;
+      background: #ececec;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      display: block;
+
+      @media (max-width: 1280px) {
+        width: calc(50% - 15px);
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        border-radius: 7px;
+        max-width: 375px;
+      }
+
+      img {
+        width: 100%;
+        // transition: all 0.3s 0.3s;
+      }
+
+      @media (min-width: 992px) {
+        &:hover {
+          img {
+            opacity: 0.9;
+            // transition: all 0.4s 0.1s;
+          }
+          .item-bottom__hover {
+            height: 10px;
+            transform: translateY(20px);
+            transition: all 0.4s 0.1s;
+          }
+        }
+      }
+    }
+
+    .item-bottom {
+      &__wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        min-height: 79px;
+        padding: 0 44px 0 20px;
+
+        @media (max-width: 1366px) {
+          min-height: 69px;
+        }
+        @media (max-width: 768px) {
+          min-height: 50px;
+        }
+      }
+
+      &__hover {
+        height: 0;
+        transition: all 0.3s 0.3s;
+      }
+
+      position: absolute;
+      bottom: 0;
+      background: #5f7dcb;
+      width: 100%;
+
+      p {
+        color: #fff;
+
+        font-size: 22px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        @include fluidFontSize(16, 22, 993, 1920);
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .item-top {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 0px 25px;
+      height: 14%;
+      background-color: #4eb749;
+      border-radius: 0px 10px 10px 0px;
+
+      @media (max-width: 1366px) {
+        padding: 0px 15px;
+      }
+
+      @media (max-width: 768px) {
+        height: 50px;
+        gap: 8px;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      span {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: uppercase;
+        @include fluidFontSize(16, 22, 993, 1920);
+        @media (max-width: 768px) {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .performance-decr {
+    margin-top: 50px;
+    max-width: 975px;
+    width: 100%;
+    padding: 20px 32px;
+    border: 2px solid #5f7dcb;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .title {
+      color: #5f7dcb;
+      font-size: 22px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 600;
+      line-height: 29px;
+      margin-bottom: 5px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    li {
+      color: #323232;
+      font-size: 18px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25px;
+      padding-left: 25px;
+      position: relative;
+
+      @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 12px;
+        top: 11px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: currentColor;
+      }
+    }
+  }
+}
