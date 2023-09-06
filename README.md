@@ -1,14 +1,8 @@
-# avtoklav-krestjanka HELICON 2023
+# peskostruj-bulat HELICON 2023
 
-vue, vuex, vue-router, gsap, fancybox, webpack, tippy.js, swiper
+react, redux, react-three, fancyapps, webpack, swiper
 
 <br>
-pages: https://delm0n.github.io/avtoklav-krestjanka-site/
+pages: https://delm0n.github.io/peskostruj-bulat-site/
 <br>
-now: https://avtoklav-krestjanka.ru/
-
-<br><br>
-
-<p align="center">
-    <img style="max-width:80%" src="./lth.png" >
-</p>
+now: https://peskostruj-bulat-official.ru/model-2
