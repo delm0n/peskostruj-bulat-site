@@ -70,6 +70,13 @@
     />
     <link
       rel="preload"
+      href="fonts/Inter/inter-v12-latin_cyrillic-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
       href="build/images/reasons/reasons-1.webp"
       as="image"
       type="image/webp"
@@ -82,14 +89,14 @@
   >
     <div id="root"></div>
 
-    <form class="form-order_hidden spnForm">
+    <form style="display: none" class="form-order_hidden spnForm">
       <input type="hidden" class="url" name="url" />
       <input type="hidden" class="gmt" name="gmt" />
       <input type="hidden" name="csrf" value="" />
-      <input type="text" name="tel" style="" />
+      <input type="hidden" type="text" name="tel" style="" />
     </form>
 
-    <div id="order-success" class="form-success_hidden">
+    <div style="display: none" id="order-success" class="form-success_hidden">
       <input type="hidden" name="order" data-order="-1" value="" />
     </div>
 

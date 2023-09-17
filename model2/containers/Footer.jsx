@@ -67,9 +67,7 @@ function Footer({ btn }) {
                 </a>
               </li>
             </ul>
-            <a href={btn.link} className="footer__btn btn">
-              {btn.text}
-            </a>
+            <button className="footer__btn btn">{btn.text}</button>
           </div>
         </div>
       </div>
