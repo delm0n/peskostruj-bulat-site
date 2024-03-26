@@ -25,7 +25,6 @@ function Rassrochka() {
     },
   ]);
   function getRassPrice(sum) {
-    // console.log(sum);
     const priceFormat = (num) => new Intl.NumberFormat("ru-RU").format(num);
     return priceFormat(Math.floor(Number(sum) / 4));
   }

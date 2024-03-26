@@ -51,8 +51,6 @@ export default function Sale() {
   ];
 
   function checkOrder(id) {
-    console.log(id);
-
     for (let i = 0; i < mainDops.length; i++) {
       mainDops[i].selected = false;
       if (mainDops[i].id == id) {

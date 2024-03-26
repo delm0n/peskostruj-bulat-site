@@ -49,20 +49,12 @@ function Footer({ btn }) {
           <div className="footer__column-links">
             <ul className="footer__list">
               <li className="footer__item">
-                <a
-                  target="_blank"
-                  className="footer__link"
-                  href="uploadupdate/confidentiality.pdf"
-                >
+                <a className="footer__link" href="">
                   Политика конфиденциальности
                 </a>
               </li>
               <li className="footer__item">
-                <a
-                  target="_blank"
-                  className="footer__link"
-                  href="uploadupdate/oferta-rus.pdf"
-                >
+                <a className="footer__link" href="">
                   Договор оферты
                 </a>
               </li>

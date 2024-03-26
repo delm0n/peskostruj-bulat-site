@@ -13,8 +13,6 @@ function Dropdown({ classItem, payload, mainDops, selectDops }) {
       }
     }
 
-    console.log(mainDops);
-
     dispatch(payload(mainDops));
     setDropdownActive(false);
   }
